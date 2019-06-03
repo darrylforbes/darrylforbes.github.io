@@ -1,2 +1,19 @@
 /* @media screen and (min-width: 320px) and (max-widt: 480px) {
 }
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    color: white;
+    background-color: #4e2a84;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
