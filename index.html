@@ -3,15 +3,27 @@
 
     <head>
         <title>Darryl Forbes</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="main.css">
+        <script type="text/javascript" src="scripts.js"></script>
     </head>
 
     <body>
         <header class="flex-container">
-            <button>home button</button>
-            <div>This is my header</div>
-            <button>navigation button</button>
+            <button id="home-button">home button</button>
+            <h2>This is my header</h2>
+            <article id="menu">
+                <div onclick="menuButtonClick(this)" id="menu-button">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+                <nav id="menu-links">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="test-pic.png">test-pic</a>
+                </nav>
+            </article>
         </header>
 
         <h1>Hi. This website is currently under construction.
@@ -21,7 +33,7 @@
 
         <h2 title="title test">Heading 2</h2>
         <p>paragraph&nbsp;2</p>
-        <img src="test-pic.png" width="150" height="200" border="3"</img>
+        <img src="test-pic.png" width="150" height="200" border="3">
 
     </body>
 
