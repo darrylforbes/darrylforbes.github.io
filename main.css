@@ -94,6 +94,15 @@ header > button {
     color: white;
 }
 
+body > section {
+    padding-top: 3rem;
+}
+
+h1 {
+    display: block;
+    color: blue;
+}
+
 /*
 body > h1 {
     background-color: lightgray;
