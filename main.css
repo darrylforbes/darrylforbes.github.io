@@ -7,6 +7,12 @@
     padding: 0;
 }
 
+body {
+    background-color: lightgray;
+    /* prevents margin collapsing */
+    position: absolute;
+}
+
 .flex-container {
     display: flex;
     position: fixed;
@@ -94,13 +100,10 @@ header > button {
     color: white;
 }
 
-body > section {
-    padding-top: 3rem;
-}
-
-h1 {
-    display: block;
-    color: blue;
+body > .content {
+    background-color: white;
+    margin: 4rem 1rem 0rem 1rem;
+    padding: 2rem;
 }
 
 /*
