@@ -53,11 +53,11 @@ header > button {
 
 /* Rotate first bar */
 .change #bar1 {
-    -webkit-transform: rotate(-45deg) translate(-.3rem, .4rem);
-    -ms-transform: rotate(-45deg) translate(-.3rem, .4rem);
-    -moz-transform: rotate(-45deg) translate(-.3rem, .4rem);
-    -o-transform: rotate(-45deg) translate(-.3rem, .4rem);
-    transform: rotate(-45deg) translate(-.3rem, .5rem);
+    -webkit-transform: rotate(-45deg) translate(-.3rem, .55rem);
+    -ms-transform: rotate(-45deg) translate(-.3rem, .55rem);
+    -moz-transform: rotate(-45deg) translate(-.3rem, .55rem);
+    -o-transform: rotate(-45deg) translate(-.3rem, .55rem);
+    transform: rotate(-45deg) translate(-.3rem, .55rem);
 }
 
 /* Fade second bar */
@@ -67,11 +67,11 @@ header > button {
 
 /* Rotate third bar */
 .change #bar3 {
-    -webkit-transform: rotate(45deg) translate(-.3rem, -.4rem);
-    -ms-transform: rotate(45deg) translate(-.3rem, -.4rem);
-    -moz-transform: rotate(45deg) translate(-.3rem, -.4rem);
-    -o-transform: rotate(45deg) translate(-.3rem, -.4rem);
-    transform: rotate(45deg) translate(-.3rem, -.5rem);
+    -webkit-transform: rotate(45deg) translate(-.3rem, -.55rem);
+    -ms-transform: rotate(45deg) translate(-.3rem, -.55rem);
+    -moz-transform: rotate(45deg) translate(-.3rem, -.55rem);
+    -o-transform: rotate(45deg) translate(-.3rem, -.55rem);
+    transform: rotate(45deg) translate(-.3rem, -.55rem);
 }
 
 #menu-links.show {
