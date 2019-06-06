@@ -14,3 +14,10 @@ function menuButtonClick(x) {
 function menuButtonHover(x) {
      x.classList.toggle("color-swap");
 }
+
+// Close navigation menu if user clicks away
+window.onclick = function(event) {
+    if (!document.getElementById("menu-button").contains(event.target)) {
+        document.getElementById("menu-links").classList.remove("show");
+    }
+}

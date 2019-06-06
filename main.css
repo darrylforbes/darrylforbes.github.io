@@ -8,7 +8,7 @@
     --back-color1: white;
     --back-color2: white;
     --text-color: black;
-    --shadow-color: #f8f8f8;
+    --shadow-color: #f4f4f4;
     --header-height: 3rem;
 }
 
@@ -66,11 +66,13 @@ body {
 .color-swap {
     box-sizing: content-box;
     background-color: var(--accent-color);
+    padding: .2rem;
     border: solid .2rem var(--accent-color);
 }
 
 .color-swap .bar {
     background-color: var(--header-color);
+    transition: .1s;
 }
 
 .bar {
@@ -129,7 +131,7 @@ body {
     color: var(--accent-color);
 }
 
-#menu-links > a:hover {
+#menu-links > a:hover, #menu-links >a:active  {
     color: var(--header-color);
     background-color: var(--accent-color);
 }
