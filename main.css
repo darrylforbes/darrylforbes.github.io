@@ -8,6 +8,7 @@
     --back-color1: white;
     --back-color2: white;
     --text-color: black;
+    --shadow-color: #f8f8f8;
     --header-height: 3rem;
 }
 
@@ -25,12 +26,13 @@ body {
     width: 100%;
 }
 
-.flex-container {
+#header {
     display: flex;
     position: fixed;
     z-index: 1;
     width: 100%;
     height: var(--header-height);
+    box-shadow: 0rem .2rem var(--shadow-color);
     color: var(--accent-color);
     background-color: var(--header-color);
     flex-direction: row;
@@ -61,6 +63,16 @@ body {
     margin: auto;
 }
 
+.color-swap {
+    box-sizing: content-box;
+    background-color: var(--accent-color);
+    border: solid .2rem var(--accent-color);
+}
+
+.color-swap .bar {
+    background-color: var(--header-color);
+}
+
 .bar {
     width: 2rem;
     height: .3rem;
@@ -79,7 +91,7 @@ body {
     -ms-transform: rotate(-45deg) translate(-.3rem, .55rem);
     -moz-transform: rotate(-45deg) translate(-.3rem, .55rem);
     -o-transform: rotate(-45deg) translate(-.3rem, .55rem);
-    transform: rotate(-45deg) translate(-.3rem, .55rem);
+    transform: rotate(-45deg) translate(-.4rem, .45rem);
 }
 
 /* Fade second bar */
@@ -93,7 +105,7 @@ body {
     -ms-transform: rotate(45deg) translate(-.3rem, -.55rem);
     -moz-transform: rotate(45deg) translate(-.3rem, -.55rem);
     -o-transform: rotate(45deg) translate(-.3rem, -.55rem);
-    transform: rotate(45deg) translate(-.3rem, -.55rem);
+    transform: rotate(45deg) translate(-.4rem, -.4rem);
 }
 
 #menu-links {
@@ -103,6 +115,7 @@ body {
     right: -.5rem;
     z-index: 1;
     min-width: 10rem;
+    box-shadow: -.2rem .2rem var(--shadow-color);
     background-color: var(--header-color);
 }
 
@@ -110,10 +123,15 @@ body {
     display: block;
 }
 
-#menu-links a {
+#menu-links > a {
     display: block;
     padding: .8rem;
     color: var(--accent-color);
+}
+
+#menu-links > a:hover {
+    color: var(--header-color);
+    background-color: var(--accent-color);
 }
 
 body > main {
@@ -139,3 +157,4 @@ body > main {
 #content3 {
     background-color: var(--accent-color);
 }
+

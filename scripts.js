@@ -11,3 +11,6 @@ function menuButtonClick(x) {
     showMenuLinks();
 }
 
+function menuButtonHover(x) {
+     x.classList.toggle("color-swap");
+}
