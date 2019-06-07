@@ -64,7 +64,7 @@ body {
     position: relative;
     display: none;
     align-items: center;
-    margin: .5em;
+    margin: 0rem .5rem;
 }
 
 #menu-button {
@@ -151,26 +151,22 @@ body {
 
 body > main {
     background-color: var(--back-color1);
-    margin: 3rem 0rem 0rem 0rem;
+    margin: 4rem 0rem 0rem 0rem;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -6rem;
+    visibility: hidden;
 }
 
 .content {
-    width: 100%;
-    /*margin: 1rem 0rem 0rem 0rem;*/
     padding: 2rem;
-}
-
-#content1 {
+    margin: 1rem;
+    border: solid 2px var(--accent-color);
+    border-radius: 1rem;
     background-color: var(--back-color1);
-}
-
-
-#content2 {
-    background-color: var(--back-color2);
-}
-
-#content3 {
-    background-color: var(--accent-color);
 }
 
 @media screen and (max-width: 480px) {
