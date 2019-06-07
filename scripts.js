@@ -19,5 +19,6 @@ function menuButtonHover(x) {
 window.onclick = function(event) {
     if (!document.getElementById("menu-button").contains(event.target)) {
         document.getElementById("menu-links").classList.remove("show");
+        document.getElementById("menu-button").classList.remove("change");
     }
 }

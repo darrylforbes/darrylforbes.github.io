@@ -40,6 +40,10 @@ body {
     align-items: center;
 }
 
+#header > .expanded-bar-link {
+    display: block;
+}
+
 #home-button {
     width: 3rem;
     padding: .5em;
