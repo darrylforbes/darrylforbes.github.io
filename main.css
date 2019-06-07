@@ -1,7 +1,3 @@
-/* @media screen and (min-width: 320px) and (max-width: 480px) {
-}
-*/
-
 :root {
     --accent-color: #4e2a84;
     --header-color: white;
@@ -40,20 +36,33 @@ body {
     align-items: center;
 }
 
-#header > .expanded-bar-link {
-    display: block;
+#home-button {
+    padding: 1rem 1.5rem;
 }
 
-#home-button {
-    width: 3rem;
-    padding: .5em;
-    margin: .5em;
+#home-button:hover {
+    background-color: var(--accent-color);
+    color: var(--header-color);
+}
+
+#header-links {
+    display: flex;
+}
+
+.expanded-bar-link {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+}
+
+.expanded-bar-link:hover {
+    background-color: var(--accent-color);
+    color: var(--header-color);
 }
 
 #menu {
     width: 3rem;
     position: relative;
-    display: inline-block;
+    display: none;
     align-items: center;
     margin: .5em;
 }
@@ -162,5 +171,14 @@ body > main {
 
 #content3 {
     background-color: var(--accent-color);
+}
+
+@media screen and (max-width: 480px) {
+    #menu {
+        display: inline-block;
+    }
+    #header > .expanded-bar-link {
+        display: none;
+    }
 }
 
