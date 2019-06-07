@@ -177,7 +177,7 @@ body > main {
     #menu {
         display: inline-block;
     }
-    #header > .expanded-bar-link {
+    .expanded-bar-link {
         display: none;
     }
 }
