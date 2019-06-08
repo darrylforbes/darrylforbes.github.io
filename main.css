@@ -59,7 +59,7 @@ a:link, a:visited {
 
 .expanded-bar-link {
     display: inline-block;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1rem;
     color: var(--accent-color);
 }
 
@@ -85,14 +85,14 @@ a:link, a:visited {
     margin: auto;
 }
 
-.color-swap {
+.color-swap:hover, .color-swap:active {
     box-sizing: content-box;
     background-color: var(--accent-color);
     padding: .2rem;
     border: solid .2rem var(--accent-color);
 }
 
-.color-swap .bar {
+.color-swap:hover .bar, .color-swap:active .bar {
     background-color: var(--header-color);
     transition: .1s;
 }
@@ -160,7 +160,7 @@ a:link, a:visited {
 
 body > main {
     background-color: var(--back-color1);
-    margin: 3.2rem 0rem 0rem 0rem;
+    margin: 3rem 0rem 0rem 0rem;
 }
 
 .content {
@@ -171,7 +171,7 @@ body > main {
 .anchor {
     display: block;
     position: relative;
-    top: -5.2rem;
+    top: -5rem;
     visibility: hidden;
 }
 
