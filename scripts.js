@@ -9,10 +9,13 @@ function showMenuLinks() {
 function menuButtonClick(x) {
     transformMenuButton(x);
     showMenuLinks();
+    if (!x.classList.contains("change")) {
+        x.classList.remove("color-swap");
+    }
 }
 
 function menuButtonHover(x) {
-     x.classList.toggle("color-swap");
+     x.classList.add("color-swap");
 }
 
 // Close navigation menu if user clicks away
