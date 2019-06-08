@@ -1,9 +1,9 @@
 :root {
-    --accent-color: #4e2a84;
-    --header-color: white;
-    --back-color1: white;
+    --accent-color: #f8333c;
+    --header-color: #f7f7f7;
+    --back-color1: #f7f7f7;
     --back-color2: #4e2a84;
-    --text-color: black;
+    --text-color: #1d1d1d;
     --shadow-color: #d4d4d4ee;
     --header-height: 3rem;
 }
@@ -37,11 +37,12 @@ body {
     align-items: center;
 }
 
-#home-button {
+#resume-button {
     padding: 1rem 1.5rem;
+    color: var(--accent-color);
 }
 
-#home-button:hover {
+#resume-button:hover {
     background-color: var(--accent-color);
     color: var(--header-color);
 }
@@ -53,6 +54,7 @@ body {
 .expanded-bar-link {
     display: inline-block;
     padding: 1rem 1.5rem;
+    color: var(--accent-color);
 }
 
 .expanded-bar-link:hover {
@@ -165,6 +167,26 @@ body > main {
     position: relative;
     top: -5.2rem;
     visibility: hidden;
+}
+
+main h1 {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+main h2 {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+#content1 > p > span {
+    display: inline-block;
+    background-color: var(--text-color);
+    color: var(--accent-color);
 }
 
 @media screen and (max-width: 480px) {
