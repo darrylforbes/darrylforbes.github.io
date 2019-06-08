@@ -91,13 +91,12 @@ a:link, a:visited {
 .color-swap:hover, .color-swap:active {
     box-sizing: content-box;
     background-color: var(--accent-color);
-    padding: .2rem;
+    padding: .1rem;
     border: solid .2rem var(--accent-color);
 }
 
 .color-swap:hover .bar, .color-swap:active .bar {
     background-color: var(--header-color);
-    transition: .1s;
 }
 
 .bar {
@@ -105,7 +104,6 @@ a:link, a:visited {
     height: .3rem;
     display: block;
     background-color: var(--accent-color);
-    transition: .5s;
 }
 
 #bar2 {
@@ -140,9 +138,8 @@ a:link, a:visited {
     position: fixed;
     top: var(--header-height);
     right: -.5rem;
-    z-index: 1;
     min-width: 10rem;
-    box-shadow: -.2rem .2rem var(--shadow-color);
+    box-shadow: .2rem .2rem 1rem var(--shadow-color);
     background-color: var(--header-color);
 }
 
