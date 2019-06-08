@@ -1,5 +1,6 @@
 :root {
-    --accent-color: #f8333c;
+    --accent-color: #6e1dd1;
+    /*--accent-color: #f8333c;*/
     --header-color: #f7f7f7;
     --back-color1: #f7f7f7;
     --back-color2: #4e2a84;
@@ -35,6 +36,11 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+a:link, a:visited {
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 
 #resume-button {
@@ -172,7 +178,7 @@ body > main {
 main h1 {
     display: block;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 1rem;
 }
 
@@ -183,13 +189,11 @@ main h2 {
     padding: 1rem;
 }
 
-#content1 > p > span {
-    display: inline-block;
-    background-color: var(--text-color);
+#content1 > p > b {
     color: var(--accent-color);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 960px) {
     #menu {
         display: inline-block;
     }
