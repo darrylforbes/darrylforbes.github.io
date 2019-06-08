@@ -112,10 +112,10 @@ a:link, a:visited {
 
 /* Rotate first bar */
 .change #bar1 {
-    -webkit-transform: rotate(-45deg) translate(-.3rem, .55rem);
-    -ms-transform: rotate(-45deg) translate(-.3rem, .55rem);
-    -moz-transform: rotate(-45deg) translate(-.3rem, .55rem);
-    -o-transform: rotate(-45deg) translate(-.3rem, .55rem);
+    -webkit-transform: rotate(-45deg) translate(-.4rem, .45rem);
+    -ms-transform: rotate(-45deg) translate(-.4rem, .45rem);
+    -moz-transform: rotate(-45deg) translate(-.4rem, .45rem);
+    -o-transform: rotate(-45deg) translate(-.4rem, .45rem);
     transform: rotate(-45deg) translate(-.4rem, .45rem);
 }
 
@@ -126,11 +126,11 @@ a:link, a:visited {
 
 /* Rotate third bar */
 .change #bar3 {
-    -webkit-transform: rotate(45deg) translate(-.3rem, -.55rem);
-    -ms-transform: rotate(45deg) translate(-.3rem, -.55rem);
-    -moz-transform: rotate(45deg) translate(-.3rem, -.55rem);
-    -o-transform: rotate(45deg) translate(-.3rem, -.55rem);
-    transform: rotate(45deg) translate(-.4rem, -.4rem);
+    -webkit-transform: rotate(45deg) translate(-.4rem, -.45rem);
+    -ms-transform: rotate(45deg) translate(-.4rem, -.45rem);
+    -moz-transform: rotate(45deg) translate(-.4rem, -.45rem);
+    -o-transform: rotate(45deg) translate(-.4rem, -.45rem);
+    transform: rotate(45deg) translate(-.4rem, -.45rem);
 }
 
 #menu-links {
