@@ -10,7 +10,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -43,11 +43,11 @@ a:link, a:visited {
 }
 
 #home-button {
-    padding: .4rem .5rem;
+    padding: .5rem;
     color: var(--accent-color);
     margin: 1rem;
     border: solid .1rem var(--accent-color);
-    border-radius: 5rem;
+    border-radius: 3rem;
     box-shadow: 0rem .2rem 1rem var(--shadow-color);
 }
 
