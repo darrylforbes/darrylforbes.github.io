@@ -49,11 +49,13 @@ a:link, a:visited {
     border: solid .1rem var(--accent-color);
     border-radius: 3rem;
     box-shadow: 0rem .2rem 1rem var(--shadow-color);
+    transition: .2s;
 }
 
 #home-button:hover {
     background-color: var(--accent-color);
     color: var(--header-color);
+    transition: .2s;
 }
 
 #header-links {
@@ -88,22 +90,13 @@ a:link, a:visited {
     margin: auto;
 }
 
-.color-swap:hover, .color-swap:active {
-    box-sizing: content-box;
-    background-color: var(--accent-color);
-    padding: .1rem;
-    border: solid .2rem var(--accent-color);
-}
-
-.color-swap:hover .bar, .color-swap:active .bar {
-    background-color: var(--header-color);
-}
-
 .bar {
     width: 2rem;
     height: .3rem;
     display: block;
     background-color: var(--accent-color);
+    border: solid .05rem var(--accent-color);
+    transition: .2s;
 }
 
 #bar2 {
@@ -117,11 +110,13 @@ a:link, a:visited {
     -moz-transform: rotate(-45deg) translate(-.4rem, .45rem);
     -o-transform: rotate(-45deg) translate(-.4rem, .45rem);
     transform: rotate(-45deg) translate(-.4rem, .45rem);
+    transition: .2s;
 }
 
 /* Fade second bar */
 .change #bar2 {
     opacity: 0;
+    transition: .2s;
 }
 
 /* Rotate third bar */
@@ -131,6 +126,7 @@ a:link, a:visited {
     -moz-transform: rotate(45deg) translate(-.4rem, -.45rem);
     -o-transform: rotate(45deg) translate(-.4rem, -.45rem);
     transform: rotate(45deg) translate(-.4rem, -.45rem);
+    transition: .2s;
 }
 
 #menu-links {
@@ -202,10 +198,9 @@ main b {
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: auto auto;
-    border: solid 2px tomato;
 }
 
-#content1 > h1 {
+#content1 > h1, #content1 > .anchor {
     grid-column: 1 / 3;
     grid-row: 1;
 }
@@ -235,9 +230,11 @@ main b {
     #menu {
         display: inline-block;
     }
+
     .expanded-bar-link {
         display: none;
     }
+
     body > main {
         width: 100%;
     }
