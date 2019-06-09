@@ -139,7 +139,7 @@ a:link, a:visited {
     top: var(--header-height);
     right: -.5rem;
     min-width: 10rem;
-    box-shadow: .2rem .2rem 1rem var(--shadow-color);
+    box-shadow: -.4rem .6rem .8rem -.2rem var(--shadow-color);
     background-color: var(--header-color);
 }
 
