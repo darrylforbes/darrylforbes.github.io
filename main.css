@@ -1,11 +1,11 @@
 :root {
     --accent-color: #6e1dd1;
-    --header-color: #f7f7f7;
     --back-color1: #f7f7f7;
     --back-color2: #4e2a84;
-    --text-color: #1d1d1d;
-    --shadow-color: #d4d4d4ee;
+    --header-color: #f7f7f7;
     --header-height: 3rem;
+    --shadow-color: #d4d4d4ee;
+    --text-color: #1d1d1d;
 }
 
 * {
@@ -24,17 +24,17 @@ body {
 }
 
 #header {
-    display: flex;
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    height: var(--header-height);
+    align-items: center;
+    background-color: var(--header-color);
     box-shadow: 0rem .2rem 1rem var(--shadow-color);
     color: var(--accent-color);
-    background-color: var(--header-color);
+    display: flex;
     flex-direction: row;
+    height: var(--header-height);
     justify-content: space-between;
-    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 a:link, a:visited {
@@ -43,12 +43,12 @@ a:link, a:visited {
 }
 
 #home-button {
-    padding: .5rem;
-    color: var(--accent-color);
-    margin: 1rem;
     border: solid .1rem var(--accent-color);
     border-radius: 3rem;
     box-shadow: 0rem .2rem 1rem var(--shadow-color);
+    color: var(--accent-color);
+    margin: 1rem;
+    padding: .5rem;
     transition: .2s;
 }
 
@@ -63,9 +63,9 @@ a:link, a:visited {
 }
 
 .expanded-bar-link {
+    color: var(--accent-color);
     display: inline-block;
     padding: 1rem 1rem;
-    color: var(--accent-color);
 }
 
 .expanded-bar-link:hover {
@@ -74,29 +74,29 @@ a:link, a:visited {
 }
 
 #menu {
-    width: 3rem;
-    position: relative;
-    display: none;
     align-items: center;
+    display: none;
     margin: 0rem .5rem;
+    position: relative;
+    width: 3rem;
 }
 
 #menu-button {
-    width: 2rem;
-    height: 1.5rem;
-    position: relative;
-    display: block;
     cursor: pointer;
+    display: block;
+    height: 1.5rem;
     margin: auto;
+    position: relative;
+    width: 2rem;
 }
 
 .bar {
-    width: 2rem;
-    height: .3rem;
-    display: block;
     background-color: var(--accent-color);
     border: solid .05rem var(--accent-color);
+    display: block;
+    height: .3rem;
     transition: .2s;
+    width: 2rem;
 }
 
 #bar2 {
@@ -105,10 +105,10 @@ a:link, a:visited {
 
 /* Rotate first bar */
 .change #bar1 {
-    -webkit-transform: rotate(-45deg) translate(-.4rem, .45rem);
-    -ms-transform: rotate(-45deg) translate(-.4rem, .45rem);
     -moz-transform: rotate(-45deg) translate(-.4rem, .45rem);
+    -ms-transform: rotate(-45deg) translate(-.4rem, .45rem);
     -o-transform: rotate(-45deg) translate(-.4rem, .45rem);
+    -webkit-transform: rotate(-45deg) translate(-.4rem, .45rem);
     transform: rotate(-45deg) translate(-.4rem, .45rem);
     transition: .2s;
 }
@@ -121,22 +121,22 @@ a:link, a:visited {
 
 /* Rotate third bar */
 .change #bar3 {
-    -webkit-transform: rotate(45deg) translate(-.4rem, -.45rem);
-    -ms-transform: rotate(45deg) translate(-.4rem, -.45rem);
     -moz-transform: rotate(45deg) translate(-.4rem, -.45rem);
+    -ms-transform: rotate(45deg) translate(-.4rem, -.45rem);
     -o-transform: rotate(45deg) translate(-.4rem, -.45rem);
+    -webkit-transform: rotate(45deg) translate(-.4rem, -.45rem);
     transform: rotate(45deg) translate(-.4rem, -.45rem);
     transition: .2s;
 }
 
 #menu-links {
+    background-color: var(--header-color);
+    box-shadow: -.4rem .6rem .8rem -.2rem var(--shadow-color);
     display: none;
     position: fixed;
-    top: var(--header-height);
     right: -.5rem;
+    top: var(--header-height);
     min-width: 10rem;
-    box-shadow: -.4rem .6rem .8rem -.2rem var(--shadow-color);
-    background-color: var(--header-color);
 }
 
 #menu-links.show {
@@ -144,29 +144,25 @@ a:link, a:visited {
 }
 
 #menu-links > a {
+    color: var(--accent-color);
     display: block;
     padding: .8rem;
-    color: var(--accent-color);
 }
 
 #menu-links > a:hover, #menu-links >a:active  {
-    color: var(--header-color);
     background-color: var(--accent-color);
+    color: var(--header-color);
 }
 
 body > main {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
     background-color: var(--back-color1);
-    margin: 3rem 0rem 0rem 0rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 3rem auto 0rem auto;
+    width: 60%;
 }
 
 .content {
-    padding: 2rem;
     background-color: var(--back-color1);
+    padding: 2rem;
 }
 
 .anchor {
@@ -178,16 +174,16 @@ body > main {
 
 main h1 {
     display: block;
-    text-align: center;
     font-size: 2.5rem;
     padding: 1rem;
+    text-align: center;
 }
 
 main h2 {
     display: block;
-    text-align: center;
     font-size: 2rem;
     padding: 1rem;
+    text-align: center;
 }
 
 main b {
@@ -212,13 +208,13 @@ main b {
 }
 
 #content1 > img {
+    border: solid .1rem var(--text-color);
+    border-radius: 3rem;
+    box-shadow: .4rem .4rem .5rem var(--shadow-color);
     grid-column: 3;
     grid-row: 2;
     margin-left: auto;
     margin-right:auto;
-    border: solid .1rem var(--text-color);
-    border-radius: 3rem;
-    box-shadow: .4rem .4rem .5rem var(--shadow-color);
 }
 
 @media screen and (max-width: 1280px) {
