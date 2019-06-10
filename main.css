@@ -1,7 +1,6 @@
 :root {
     --accent-color: #6e1dd1;
     --back-color1: #f7f7f7;
-    --back-color2: #4e2a84;
     --header-color: #f7f7f7;
     --header-height: 3rem;
     --shadow-color: #d4d4d4ee;
@@ -205,6 +204,7 @@ main b {
 #content1 > div {
     grid-column: 1;
     grid-row: 2;
+    margin: auto;
 }
 
 #content1 > img {
