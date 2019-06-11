@@ -4,7 +4,8 @@
     --header-color: #f7f7f7;
     --header-height: 3rem;
     --shadow-color: #d4d4d4ee;
-    --text-color: #1d1d1d;
+    --text-color-dark: #1d1d1d;
+    --text-color-light: #f7f7f7;
 }
 
 * {
@@ -16,7 +17,7 @@
 
 body {
     background-color: var(--back-color1);
-    color: var(--text-color);
+    color: var(--text-color-dark);
     /* prevents margin collapsing */
     position: absolute;
     width: 100%;
@@ -53,7 +54,7 @@ a:link, a:visited {
 
 #home-button:hover {
     background-color: var(--accent-color);
-    color: var(--header-color);
+    color: var(--text-color-light);
     transition: .2s;
 }
 
@@ -69,7 +70,7 @@ a:link, a:visited {
 
 .expanded-bar-link:hover {
     background-color: var(--accent-color);
-    color: var(--header-color);
+    color: var(--text-color-light);
 }
 
 #menu {
@@ -150,13 +151,13 @@ a:link, a:visited {
 
 #menu-links > a:hover, #menu-links >a:active  {
     background-color: var(--accent-color);
-    color: var(--header-color);
+    color: var(--text-color-light);
 }
 
 body > main {
     background-color: var(--back-color1);
     margin: 3rem auto 0rem auto;
-    width: 60%;
+    width: 70%;
 }
 
 .content {
@@ -174,15 +175,15 @@ body > main {
 main h1 {
     display: block;
     font-size: 2.5rem;
-    padding: 1rem;
     text-align: center;
+    border: solid 2px tomato;
 }
 
 main h2 {
     display: block;
     font-size: 2rem;
-    padding: 1rem;
     text-align: center;
+    border: solid 2px tomato;
 }
 
 main b {
@@ -193,28 +194,93 @@ main b {
     display: grid;
     grid-template-columns: 55% 10% 35%;
     grid-template-rows: auto auto;
+    margin-bottom: 2rem;
+    border: solid 2px tomato;
 }
 
 #content1 > h1, #content1 > .anchor {
     grid-column: 1 / 4;
     grid-row: 1;
-    padding-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 #content1 > div {
     grid-column: 1;
     grid-row: 2;
     margin: auto;
+    border: solid 2px tomato;
 }
 
 #content1 > img {
-    border: solid .1rem var(--text-color);
+    border: solid .1rem var(--text-color-dark);
     border-radius: 3rem;
     box-shadow: .4rem .4rem .5rem var(--shadow-color);
     grid-column: 3;
     grid-row: 2;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
+    border: solid 2px tomato;
+}
+
+#content2 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    border: solid 2px tomato;
+}
+
+#content2 a, #content2 h2 {
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 2rem;
+    border: solid 2px tomato;
+}
+
+#content2 > #tetrow {
+    display: grid;
+    grid-column 1;
+    grid-row: 2;
+    grid-template-columns: auto 10% auto;
+    grid-template-rows: auto;
+    margin-bottom: 1rem;
+    border: solid 2px tomato;
+}
+
+#tetrow > img {
+    grid-column: 1;
+    grid-row: 1;
+    margin: auto;
+    border: solid 2px tomato;
+}
+
+#tetrow > div {
+    grid-column: 3;
+    grid-row:1;
+    margin: auto;
+    border: solid 2px tomato;
+}
+
+#tetrow > div > h3 {
+    background-color: var(--accent-color);
+    border-radius: 1rem;
+    color: var(--text-color-light);
+    padding: 1rem;
+    text-align: center;
+    border: solid 2px tomato;
+}
+
+#tetrow > div > ul {
+    padding-left: 1.25rem;
+}
+
+#content2 > #adventure-rpg{
+    gird-column 1;
+    grid-row: 3;
+    border: solid 2px tomato;
+}
+
+#content2 img {
+    border-radius: .5rem;
 }
 
 @media screen and (max-width: 1280px) {
@@ -249,12 +315,28 @@ main b {
     #content1 > div {
         grid-column: 1;
         grid-row: 2;
+        margin-bottom: 1rem;
     }
 
     #content1 > img {
         grid-column: 1;
         grid-row: 3;
-        margin-top: 2rem;
+    }
+
+    #content2 > #tetrow {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+
+    #tetrow > img {
+        grid-column: 1;
+        grid-row: 1;
+        margin-bottom: 1rem;
+    }
+
+    #tetrow > div {
+        grid-column: 1;
+        grid-row: 2;
     }
 }
 
