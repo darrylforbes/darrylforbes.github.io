@@ -18,3 +18,8 @@ window.onclick = function(event) {
         document.getElementById("menu-button").classList.remove("change");
     }
 }
+
+function projectLinkHover(x) {
+    x.classList.toggle("color-swap");
+}
+
