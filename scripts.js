@@ -20,6 +20,6 @@ window.onclick = function(event) {
 }
 
 function projectLinkHover(x) {
-    x.classList.toggle("color-swap");
+    x.classList.toggle("hover");
 }
 

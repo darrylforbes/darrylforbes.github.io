@@ -4,7 +4,7 @@
     --back-color: #f7f7f7;
     --header-color: #f7f7f7;
     --header-height: 3rem;
-    --shadow-color: #d4d4d4ee;
+    --shadow-color: #c0c5c1;
     --text-color-dark: #1d1d1d;
     --text-color-light: #f7f7f7;
 }
@@ -175,8 +175,14 @@ body > main {
 }
 
 .content h1 {
+    background-color: var(--text-color-light);
+    border: solid .1rem var(--accent-color);
+    border-radius: 3rem;
+    box-shadow: 0rem .2rem 1rem var(--shadow-color);
+    color: var(--accent-color);
     display: block;
     font-size: 2.5rem;
+    padding: .1rem;
     text-align: center;
 }
 
@@ -226,7 +232,7 @@ body > main {
     grid-template-rows: auto auto auto auto;
 }
 
-#content2 a, #content2 h2 {
+#content2 a, #content2 h1 {
     grid-column: 1;
     grid-row: 1;
 }
@@ -238,20 +244,25 @@ body > main {
 }
 
 #content2 .project-link {
-    border-radius: 1rem;
+    border-radius: 3rem;
     cursor: pointer;
 }
 
-#content2 .color-swap h3 {
-    /*background-color: var(--text-color-light);*/
-    background-color: var(--secondary-color);;
-    color: var(--accent-color);
+#content2 .hover h3 {
+    position: relative;
+    top: -.1rem;
+    box-shadow: 0rem .2rem 1rem .2rem var(--shadow-color);
+}
+
+#content2 .hover img {
+    position: absolute;
+    top: .25rem;
 }
 
 #content2 h3 {
     background-color: var(--accent-color);
     border: solid .1rem var(--accent-color);
-    border-radius: 1rem;
+    border-radius: 3rem;
     color: var(--text-color-light);
     padding: .5rem;
     text-align: center;
