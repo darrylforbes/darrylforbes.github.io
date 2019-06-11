@@ -276,7 +276,9 @@ body > main {
 }
 
 #tetrow > img {
+    border: solid .1rem var(--text-color-dark);
     border-radius: .5rem;
+    box-shadow: .4rem .4rem .5rem var(--shadow-color);
     grid-column: 1;
     grid-row: 1;
     margin: auto;
@@ -310,7 +312,9 @@ body > main {
 }
 
 #adventure-rpg-images > img {
+    border: solid .1rem var(--text-color-dark);
     border-radius: .5rem;
+    box-shadow: .4rem .4rem .5rem var(--shadow-color);
     display: block;
 }
 
