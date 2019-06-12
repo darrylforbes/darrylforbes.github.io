@@ -14,6 +14,7 @@
     font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
+    border: 2px solid tomato;
 }
 
 body {
@@ -243,6 +244,13 @@ body > main {
     grid-row-gap: 1rem;
 }
 
+#content2 .project-image {
+    border: solid .1rem var(--text-color-dark);
+    border-radius: .5rem;
+    box-shadow: .4rem .4rem .5rem var(--shadow-color);
+    margin: auto;
+}
+
 #content2 .project-link {
     border-radius: 3rem;
     cursor: pointer;
@@ -287,12 +295,8 @@ body > main {
 }
 
 #tetrow > img {
-    border: solid .1rem var(--text-color-dark);
-    border-radius: .5rem;
-    box-shadow: .4rem .4rem .5rem var(--shadow-color);
     grid-column: 1;
     grid-row: 1;
-    margin: auto;
 }
 
 #tetrow > #tetrow-text {
@@ -300,6 +304,7 @@ body > main {
     grid-row:1;
     margin: auto;
     position: relative;
+    width: 80%;
 }
 
 #content2 > #adventure-rpg {
@@ -314,6 +319,7 @@ body > main {
     grid-row 1;
     margin: auto;
     position: relative;
+    width: 90%;
 }
 
 #adventure-rpg > #adventure-rpg-images {
@@ -323,10 +329,27 @@ body > main {
 }
 
 #adventure-rpg-images > img {
-    border: solid .1rem var(--text-color-dark);
-    border-radius: .5rem;
-    box-shadow: .4rem .4rem .5rem var(--shadow-color);
     display: block;
+}
+
+#content2 > #dotfiles {
+    grid-column 1;
+    grid-row: 4;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}
+
+#dotfiles > img {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#dotfiles> #dotfiles-text {
+    grid-column: 2;
+    grid-row:1;
+    margin: auto;
+    position: relative;
+    width: 80%;
 }
 
 @media screen and (max-width: 1280px) {
@@ -400,5 +423,21 @@ body > main {
     #adventure-rpg > #adventure-rpg-text {
         grid-column: 1;
         grid-row: 2;
+    }
+
+    #content2 > #dotfiles{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+
+    #dotfiles > img {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #dotfiles > #dotfiles-text {
+        grid-column: 1;
+        grid-row: 2;
+    }
 }
 
