@@ -394,7 +394,7 @@ body > main {
     box-shadow: 0rem .2rem 1rem .2rem var(--shadow-color);
 }
 
-#content4 a {
+#content4 > .contact-link > a {
     color: var(--text-color-dark);
     left: 1rem;
     position: relative;
@@ -512,17 +512,12 @@ body > main {
         grid-row: 2;
     }
 
-    #content4 {
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto auto auto auto auto auto;
-    }
-
-    #content4 img {
+    #content4 > .contact-link > img {
         display: block;
         margin: auto;
     }
 
-    #content4 a {
+    #content4 > .contact-link > a {
         display: block;
         margin-top: .5rem;
         position: static;
