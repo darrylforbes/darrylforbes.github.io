@@ -381,6 +381,7 @@ body > main {
 #content4 img {
     background-color: var(--accent-color);
     border-radius: 1rem;
+    cursor: pointer;
     height: 3rem;
     padding: .5rem;
     vertical-align: middle;
