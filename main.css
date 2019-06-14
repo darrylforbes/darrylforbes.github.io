@@ -374,8 +374,8 @@ body > main {
 
 #content4 > .contact-link {
     margin: auto;
-    width: 100%;
     max-width: 25rem;
+    width: 100%;
 }
 
 #content4 img {
@@ -512,16 +512,19 @@ body > main {
         grid-row: 2;
     }
 
+    #content4 > .contact-link {
+        text-align: center;
+    }
+
     #content4 > .contact-link > img {
         display: block;
         margin: auto;
     }
 
     #content4 > .contact-link > a {
-        display: block;
+        display: inline-block;
         margin-top: .5rem;
         position: static;
-        text-align: center;
     }
 }
 
