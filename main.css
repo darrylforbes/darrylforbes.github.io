@@ -283,6 +283,10 @@ body > main {
     padding-left: 1.25rem;
 }
 
+#content2 li {
+    font-size: 1rem;
+}
+
 #content2 > #tetrow {
     grid-column 1;
     grid-row: 2;
