@@ -203,24 +203,24 @@ body > main {
     color: var(--accent-color);
 }
 
-#content1 {
+#about {
     grid-column-gap: 2rem;
     grid-template-columns: 60% auto;
     grid-template-rows: auto auto;
 }
 
-#content1 > h1, #content1 > .anchor {
+#about > h1, #about > .anchor {
     grid-column: 1 / 3;
     grid-row: 1;
 }
 
-#content1 > div {
+#about > div {
     grid-column: 1;
     grid-row: 2;
     margin: auto;
 }
 
-#content1 > img {
+#about > img {
     border: solid .1rem var(--text-color-dark);
     border-radius: 3rem;
     box-shadow: .4rem .4rem .5rem var(--shadow-color);
@@ -229,46 +229,46 @@ body > main {
     margin: auto;
 }
 
-#content2 {
+#projects {
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto;
 }
 
-#content2 > h1, #content2 > .anchor {
+#projects > h1, #projects > .anchor {
     grid-column: 1;
     grid-row: 1;
 }
 
-#content2 > .project {
+#projects > .project {
     display: grid;
     grid-column-gap: 2rem;
     grid-row-gap: 1rem;
 }
 
-#content2 .project-image {
+#projects .project-image {
     border: solid .1rem var(--text-color-dark);
     border-radius: .5rem;
     box-shadow: .4rem .4rem .5rem var(--shadow-color);
     margin: auto;
 }
 
-#content2 .project-link {
+#projects .project-link {
     border-radius: 3rem;
     cursor: pointer;
 }
 
-#content2 .hover h3 {
+#projects .hover h3 {
     position: relative;
     top: -.1rem;
     box-shadow: 0rem .2rem 1rem .2rem var(--shadow-color);
 }
 
-#content2 .hover img {
+#projects .hover img {
     position: absolute;
     top: .25rem;
 }
 
-#content2 h3 {
+#projects h3 {
     background-color: var(--accent-color);
     border: solid .1rem var(--accent-color);
     border-radius: 3rem;
@@ -277,18 +277,18 @@ body > main {
     text-align: center;
 }
 
-#content2 .github-logo {
+#projects .github-logo {
     border-radius: 2rem;
     position: absolute;
     left: .25rem;
     top: .35rem;
 }
 
-#content2 ul {
+#projects ul {
     padding-left: 1.25rem;
 }
 
-#content2 > #tetrow {
+#projects > #tetrow {
     grid-column 1;
     grid-row: 2;
     grid-template-columns: auto auto;
@@ -307,7 +307,7 @@ body > main {
     position: relative;
 }
 
-#content2 > #adventure-rpg {
+#projects > #adventure-rpg {
     grid-column 1;
     grid-row: 3;
     grid-template-columns: auto auto;
@@ -331,7 +331,7 @@ body > main {
     display: block;
 }
 
-#content2 > #dotfiles {
+#projects > #dotfiles {
     grid-column 1;
     grid-row: 4;
     grid-template-columns: auto auto;
@@ -350,45 +350,54 @@ body > main {
     position: relative;
 }
 
-#content2 > #more-projects {
+#projects > #more-projects {
     grid-column: 1;
     grid-row: 5;
     position: relative;
 }
 
-#content3 {
+#experience {
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
 }
 
-#content3 h1, #content3 .anchor {
+#experience h1, #experience .anchor {
     grid-column: 1;
     grid-row: 1;
 }
 
-#content3 img {
+#experience img {
     cursor: pointer;
     background-color: var(--shadow-color);
 }
 
-#content4 {
+#experience .vertical-line {
+    background-color: var(--shadow-color);
+    border: .1rem solid var(--accent-color);
+    border-radius: 1rem;
+    height: 50rem;
+    margin: auto;
+    width: 2rem;
+}
+
+#contact {
     grid-column-gap: 1rem;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto;
 }
 
-#content4 > h1, #content4 .anchor {
+#contact > h1, #contact .anchor {
     grid-column: 1;
     grid-row: 1;
 }
 
-#content4 > .contact-link {
+#contact > .contact-link {
     margin: auto;
     max-width: 25rem;
     width: 100%;
 }
 
-#content4 img {
+#contact img {
     background-color: var(--accent-color);
     border-radius: 1rem;
     cursor: pointer;
@@ -398,13 +407,13 @@ body > main {
     width: 3rem;
 }
 
-#content4 img:hover {
+#contact img:hover {
     position: relative;
     top: -.1rem;
     box-shadow: 0rem .2rem 1rem .2rem var(--shadow-color);
 }
 
-#content4 > .contact-link > a {
+#contact > .contact-link > a {
     color: var(--text-color-dark);
     left: 1rem;
     position: relative;
@@ -412,22 +421,22 @@ body > main {
     top: .1rem;
 }
 
-#content4 > #email {
+#contact > #email {
     grid-column: 1;
     grid-row: 2;
 }
 
-#content4 > #phone {
+#contact > #phone {
     grid-column: 1;
     grid-row: 3;
 }
 
-#content4 > #linkedin {
+#contact > #linkedin {
     grid-column: 1;
     grid-row: 4;
 }
 
-#content4 > #github {
+#contact > #github {
     grid-column: 1;
     grid-row: 5;
 }
@@ -453,31 +462,31 @@ body > main {
         width: 100%;
     }
 
-    #content1 {
+    #about {
         grid-template-columns: auto;
         grid-template-rows: auto auto auto;
     }
 
-    #content1 > h1, #content1 > .anchor {
+    #about > h1, #about > .anchor {
         grid-column: 1;
         grid-row: 1;
     }
 
-    #content1 > div {
+    #about > div {
         grid-column: 1;
         grid-row: 2;
     }
 
-    #content1 > img {
+    #about > img {
         grid-column: 1;
         grid-row: 3;
     }
 
-    #content2 {
+    #projects {
         grid-row-gap: 2rem;
     }
 
-    #content2 > #tetrow {
+    #projects > #tetrow {
         grid-template-columns: auto;
         grid-template-rows: auto auto;
     }
@@ -492,7 +501,7 @@ body > main {
         grid-row: 2;
     }
 
-    #content2 > #adventure-rpg {
+    #projects > #adventure-rpg {
         grid-template-columns: auto;
         grid-template-rows: auto auto;
     }
@@ -507,7 +516,7 @@ body > main {
         grid-row: 2;
     }
 
-    #content2 > #dotfiles {
+    #projects > #dotfiles {
         grid-template-columns: auto;
         grid-template-rows: auto auto;
     }
@@ -522,16 +531,16 @@ body > main {
         grid-row: 2;
     }
 
-    #content4 > .contact-link {
+    #contact > .contact-link {
         text-align: center;
     }
 
-    #content4 > .contact-link > img {
+    #contact > .contact-link > img {
         display: block;
         margin: auto;
     }
 
-    #content4 > .contact-link > a {
+    #contact > .contact-link > a {
         display: inline-block;
         margin-top: .5rem;
         position: static;
