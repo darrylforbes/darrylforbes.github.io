@@ -257,20 +257,8 @@ body > main {
     cursor: pointer;
 }
 
-#projects .hover h3 {
-    position: relative;
-    top: -.1rem;
-    box-shadow: 0rem .2rem 1rem .2rem var(--shadow-color);
-}
-
-#projects .hover img {
-    position: absolute;
-    top: .25rem;
-}
-
 #projects h3 {
     background-color: var(--accent-color);
-    border: solid .1rem var(--accent-color);
     border-radius: 3rem;
     color: var(--text-color-light);
     padding: .5rem;
@@ -281,7 +269,18 @@ body > main {
     border-radius: 2rem;
     position: absolute;
     left: .25rem;
-    top: .35rem;
+    top: .25rem;
+}
+
+#projects .hover h3 {
+    position: relative;
+    top: -.1rem;
+    box-shadow: 0rem .2rem 1rem .2rem var(--shadow-color);
+}
+
+#projects .hover .github-logo {
+    position: absolute;
+    top: .15rem;
 }
 
 #projects ul {
@@ -357,6 +356,11 @@ body > main {
 }
 
 #experience {
+    --timeline-length: 40rem;
+    --start-month: 222;
+    --current-month: 235;
+    --time-span: var(--current-month) - var(--start-month) + 1;
+    --month-size: var(--timeline-length) / var(--elapsed-time) * 1rem
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
 }
@@ -371,13 +375,16 @@ body > main {
     background-color: var(--shadow-color);
 }
 
-#experience .vertical-line {
-    background-color: var(--shadow-color);
-    border: .1rem solid var(--accent-color);
+#experience #timeline {
+    background-color: var(--accent-color);
     border-radius: 1rem;
-    height: 50rem;
+    height: var(--timeline-length);
     margin: auto;
     width: 2rem;
+}
+
+#timeline .job {
+    /*visibility: hidden;*/
 }
 
 #contact {
