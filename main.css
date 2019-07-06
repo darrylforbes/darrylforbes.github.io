@@ -220,6 +220,15 @@ body > main {
     margin: auto;
 }
 
+#about h3 {
+    background-color: var(--accent-color);
+    border: solid .1rem var(--accent-color);
+    border-radius: 1rem;
+    color: var(--text-color-light);
+    display: inline-block;
+    padding: .25rem;
+}
+
 #about > img {
     border: solid .1rem var(--text-color-dark);
     border-radius: 3rem;
