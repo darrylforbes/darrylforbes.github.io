@@ -380,8 +380,9 @@ body > main {
 }
 
 #experience img {
-    cursor: pointer;
     background-color: var(--shadow-color);
+    cursor: pointer;
+    display: none;
 }
 
 #experience #timeline {
@@ -393,7 +394,7 @@ body > main {
 }
 
 #timeline .job {
-    /*visibility: hidden;*/
+    display: none;
 }
 
 #contact {
