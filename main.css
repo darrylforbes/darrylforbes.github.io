@@ -361,7 +361,9 @@ body > main {
 #projects > #more-projects {
     grid-column: 1;
     grid-row: 5;
+    margin: auto;
     position: relative;
+    width: 90%;
 }
 
 #experience {
