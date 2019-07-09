@@ -491,12 +491,12 @@ body > main {
         grid-row: 1;
     }
 
-    #about > div {
+    #about > img {
         grid-column: 1;
         grid-row: 2;
     }
 
-    #about > img {
+    #about > div {
         grid-column: 1;
         grid-row: 3;
     }
