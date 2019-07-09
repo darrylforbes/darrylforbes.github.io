@@ -199,10 +199,6 @@ body > main {
     text-align: center;
 }
 
-.content b {
-    color: var(--accent-color);
-}
-
 #about {
     grid-column-gap: 2rem;
     grid-template-columns: 60% auto;
