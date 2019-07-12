@@ -375,17 +375,17 @@ body > main {
 #experience #timeline {
     background-color: var(--accent-color);
     border-radius: 1rem;
+    grid-column: 1;
+    grid-row: 2 / 4;
     height: 40rem;
-    margin: auto;
-    position: absolute;
-    visibility: hidden;
+    margin-left: 16rem;
     width: 2rem;
 }
 
 #experience > .job {
     display: grid;
     grid-column: 1;
-    grid-template-columns: 14rem 6rem auto;
+    grid-template-columns: 14rem 8rem auto;
     grid-template-rows: auto;
 }
 
@@ -398,28 +398,25 @@ body > main {
 }
 
 .job > .job-header {
-    border: solid 1px tomato;
     grid-column: 1;
     grid-row: 1;
     padding: 1rem;
 }
 
-.job > .timeline-point {
+.job > img {
     background-color: var(--text-color-light);
     border: solid .1rem var(--accent-color);
-    border-radius: 1rem;
-    display: inline-block;
+    border-radius: 4rem;
+    cursor: pointer;
+    display: block;
     grid-column: 2;
     grid-row: 1;
-}
-
-.timeline-point > img {
-    display: block;
-    margin: auto
+    padding: .75rem 0rem;
 }
 
 .job > .job-info {
-    border: solid 1px tomato;
+    border: solid .1rem var(--accent-color);
+    border-radius: 1rem;
     grid-column: 3;
     grid-row: 1;
     padding: 1rem;
