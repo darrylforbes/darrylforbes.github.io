@@ -349,7 +349,7 @@ body > main {
 
 #dotfiles > #dotfiles-text {
     grid-column: 2;
-    grid-row:1;
+    grid-row: 1;
     margin: auto;
     position: relative;
 }
@@ -363,11 +363,6 @@ body > main {
 }
 
 #experience {
-    --timeline-length: 40rem;
-    --start-month: 222;
-    --current-month: 235;
-    --time-span: var(--current-month) - var(--start-month) + 1;
-    --month-size: var(--timeline-length) / var(--elapsed-time) * 1rem
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
 }
@@ -377,22 +372,61 @@ body > main {
     grid-row: 1;
 }
 
-#experience img {
-    background-color: var(--shadow-color);
-    cursor: pointer;
-    display: none;
-}
-
 #experience #timeline {
     background-color: var(--accent-color);
     border-radius: 1rem;
-    height: var(--timeline-length);
+    height: 40rem;
     margin: auto;
+    position: absolute;
+    visibility: hidden;
     width: 2rem;
 }
 
-#timeline .job {
-    display: none;
+#experience > .job {
+    display: grid;
+    grid-column: 1;
+    grid-template-columns: 14rem 6rem auto;
+    grid-template-rows: auto;
+}
+
+#experience > #job1 {
+    grid-row: 2;
+}
+
+#experience > #job0 {
+    grid-row: 3;
+}
+
+.job > .job-header {
+    border: solid 1px tomato;
+    grid-column: 1;
+    grid-row: 1;
+    padding: 1rem;
+}
+
+.job > .timeline-point {
+    background-color: var(--text-color-light);
+    border: solid .1rem var(--accent-color);
+    border-radius: 1rem;
+    display: inline-block;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.timeline-point > img {
+    display: block;
+    margin: auto
+}
+
+.job > .job-info {
+    border: solid 1px tomato;
+    grid-column: 3;
+    grid-row: 1;
+    padding: 1rem;
+}
+
+.job-info > ul {
+    padding-left: 1.25rem;
 }
 
 #contact {
