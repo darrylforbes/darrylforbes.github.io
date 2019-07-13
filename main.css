@@ -377,7 +377,7 @@ body > main {
     border-radius: 1rem;
     grid-column: 1;
     grid-row: 2 / 4;
-    height: 40rem;
+    height: 100%;
     margin-left: 4rem;
     width: 2rem;
 }
