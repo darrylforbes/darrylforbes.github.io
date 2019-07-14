@@ -194,9 +194,7 @@ body > main {
 }
 
 .content h2 {
-    display: block;
-    font-size: 2rem;
-    text-align: center;
+    font-size: 1.17rem;
 }
 
 #about {
@@ -216,7 +214,7 @@ body > main {
     margin: auto;
 }
 
-#about h3 {
+#about h2 {
     background-color: var(--accent-color);
     border: solid .1rem var(--accent-color);
     border-radius: 1rem;
@@ -262,7 +260,7 @@ body > main {
     cursor: pointer;
 }
 
-#projects h3 {
+#projects h2 {
     background-color: var(--accent-color);
     border-radius: 3rem;
     color: var(--text-color-light);
@@ -277,7 +275,7 @@ body > main {
     top: .25rem;
 }
 
-#projects .hover h3 {
+#projects .hover h2 {
     position: relative;
     top: -.1rem;
     box-shadow: 0rem .2rem 1rem .2rem var(--shadow-color);
@@ -408,7 +406,7 @@ body > main {
     grid-row: 1;
     height: 8rem;
     justify-content: center;
-    margin: 0rem auto;
+    margin: auto;
     width: 8rem;
 }
 
