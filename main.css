@@ -398,21 +398,18 @@ body > main {
 }
 
 .job > .job-logo {
+    align-items: center;
     background-color: var(--text-color-light);
     border: solid .1rem var(--accent-color);
     border-radius: 50%;
     cursor: pointer;
+    display: flex;
     grid-column: 1;
     grid-row: 1;
     height: 8rem;
+    justify-content: center;
     margin: 0rem auto;
     width: 8rem;
-}
-
-.job-logo > img {
-    display: block;
-    margin: auto;
-    margin-top: 1.35rem;
 }
 
 .job > .job-info {
