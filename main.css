@@ -276,9 +276,9 @@ body > main {
 }
 
 #projects .hover h2 {
+    box-shadow: 0rem .2rem 1rem .2rem var(--shadow-color);
     position: relative;
     top: -.1rem;
-    box-shadow: 0rem .2rem 1rem .2rem var(--shadow-color);
 }
 
 #projects .hover .github-logo {
@@ -387,6 +387,12 @@ body > main {
     grid-template-rows: auto;
 }
 
+.job > .job-logo:hover {
+    box-shadow: 0rem .2rem 1rem .2rem var(--shadow-color);
+    position: relative;
+    top: -.1rem;
+}
+
 #experience > #job1 {
     grid-row: 2;
 }
@@ -450,9 +456,9 @@ body > main {
 }
 
 #contact img:hover {
+    box-shadow: 0rem .2rem 1rem .2rem var(--shadow-color);
     position: relative;
     top: -.1rem;
-    box-shadow: 0rem .2rem 1rem .2rem var(--shadow-color);
 }
 
 #contact > .contact-link > a {
