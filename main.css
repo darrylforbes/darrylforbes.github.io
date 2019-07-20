@@ -357,7 +357,7 @@ body > main {
     grid-row: 5;
     margin: auto;
     position: relative;
-    width: 90%;
+    width: 100%;
 }
 
 #experience {
