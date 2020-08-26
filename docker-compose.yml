@@ -5,5 +5,15 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    ports:
-      - 80:80
+    environment:
+      - VIRTUAL_HOST=www.darrylforbes.me
+      - LETSENCRYPT_HOST=www.darrylforbes.me
+    networks:
+      - nginx-network
+    expose:
+      - 80
+
+networks:
+  nginx-network:
+    external:
+      name: nginx-network
