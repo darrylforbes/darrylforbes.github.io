@@ -6,8 +6,8 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      - VIRTUAL_HOST=www.darrylforbes.me
-      - LETSENCRYPT_HOST=www.darrylforbes.me
+      - VIRTUAL_HOST=www.darrylforbes.me,darrylforbes.me
+      - LETSENCRYPT_HOST=www.darrylforbes.me,darrylforbes.me
     networks:
       - nginx-network
     expose:
