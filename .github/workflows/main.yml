@@ -39,13 +39,13 @@ jobs:
         run: echo "::set-output name=SHA7::$(git rev-parse --short HEAD)"
 
       - name: Build docker images
-        run: docker build --tag $REGISTRY_PATH/nginx:${{ steps.vars.outputs.SHA7 }} .
+        run: docker build --tag $REGISTRY_PATH/personal-website-nginx:${{ steps.vars.outputs.SHA7 }} .
 
       - name: Log into registry
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
 
       - name: Push images
-        run: docker push $REGISTRY_PATH/nginx:${{ steps.vars.outputs.SHA7 }}
+        run: docker push $REGISTRY_PATH/personal-website-nginx:${{ steps.vars.outputs.SHA7 }}
 
   push:
     needs: build
@@ -66,10 +66,10 @@ jobs:
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
 
       - name: Pull docker images
-        run: docker pull $REGISTRY_PATH/nginx:${{ steps.vars.outputs.SHA7 }}
+        run: docker pull $REGISTRY_PATH/personal-website-nginx:${{ steps.vars.outputs.SHA7 }}
 
       - name: Tag images
-        run: docker tag $REGISTRY_PATH/nginx:${{ steps.vars.outputs.SHA7 }} $REGISTRY_PATH/nginx:latest
+        run: docker tag $REGISTRY_PATH/personal-website-nginx:${{ steps.vars.outputs.SHA7 }} $REGISTRY_PATH/personal-website-nginx:latest
 
       - name: Push images
-        run: docker push $REGISTRY_PATH/nginx:latest
+        run: docker push $REGISTRY_PATH/personal-website-nginx:latest
