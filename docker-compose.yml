@@ -2,9 +2,7 @@ version: "3.7"
 
 services:
   nginx:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: docker.pkg.github.com/personal-website/personal-website-api
     environment:
       - VIRTUAL_HOST=www.darrylforbes.me,darrylforbes.me
       - LETSENCRYPT_HOST=www.darrylforbes.me,darrylforbes.me
