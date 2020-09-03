@@ -3,9 +3,6 @@ version: "3.7"
 services:
   nginx:
     image: darrylforbes/personal-website-nginx
-    environment:
-      - VIRTUAL_HOST=www.darrylforbes.me,darrylforbes.me
-      - LETSENCRYPT_HOST=www.darrylforbes.me,darrylforbes.me
     networks:
       - nginx-network
     expose:
