@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-18.04
 
     env:
-      REGISTRY_PATH: docker.pkg.github.com/${{ github.repository }}
+      REGISTRY_PATH: ghcr.io/${{ github.repository }}
 
     steps:
       - uses: actions/checkout@v2
@@ -42,7 +42,7 @@ jobs:
         run: docker build --tag $REGISTRY_PATH/personal-website-nginx:${{ steps.vars.outputs.SHA7 }} .
 
       - name: Log into registry
-        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
+        run: echo "${{ secrets.GHCR_PAT }}" | docker login https://ghcr.io -u ${{ github.actor }} --password-stdin
 
       - name: Push images
         run: docker push $REGISTRY_PATH/personal-website-nginx:${{ steps.vars.outputs.SHA7 }}
@@ -53,7 +53,7 @@ jobs:
     runs-on: ubuntu-18.04
 
     env:
-      REGISTRY_PATH: docker.pkg.github.com/${{ github.repository }}
+      REGISTRY_PATH: ghcr.io/${{ github.repository }}
 
     steps:
       - uses: actions/checkout@v2
@@ -63,7 +63,7 @@ jobs:
         run: echo "::set-output name=SHA7::$(git rev-parse --short HEAD)"
 
       - name: Log into registry
-        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
+        run: echo "${{ secrets.GHCR_PAT }}" | docker login https://ghcr.io -u ${{ github.actor }} --password-stdin
 
       - name: Pull docker images
         run: docker pull $REGISTRY_PATH/personal-website-nginx:${{ steps.vars.outputs.SHA7 }}
