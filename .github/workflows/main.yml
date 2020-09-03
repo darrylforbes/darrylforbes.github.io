@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-18.04
 
     env:
-      REGISTRY_PATH: ghcr.io/${{ github.repository }}
+      REGISTRY_PATH: ghcr.io/${{ github.actor }}
 
     steps:
       - uses: actions/checkout@v2
@@ -53,7 +53,7 @@ jobs:
     runs-on: ubuntu-18.04
 
     env:
-      REGISTRY_PATH: ghcr.io/${{ github.repository }}
+      REGISTRY_PATH: ghcr.io/${{ github.actor }}
 
     steps:
       - uses: actions/checkout@v2
