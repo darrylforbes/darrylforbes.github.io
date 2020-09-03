@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   nginx:
-    image: ghcr.io/personal-website/personal-website-api
+    image: ghcr.io/darrylforbes/personal-website-api
     environment:
       - VIRTUAL_HOST=www.darrylforbes.me,darrylforbes.me
       - LETSENCRYPT_HOST=www.darrylforbes.me,darrylforbes.me
