@@ -1,4 +1,4 @@
-name: Upload Website
+name: CI/CD
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
       - master
 
 jobs:
-  deploy:
+  sync:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,3 +24,52 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: "us-east-2"
           SOURCE_DIR: "public"
+
+  build:
+    runs-on: ubuntu-18.04
+
+    env:
+      REGISTRY_PATH: docker.pkg.github.com/${{ github.repository }}
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Get SHA7
+        id: vars
+        run: echo "::set-output name=SHA7::$(git rev-parse --short HEAD)"
+
+      - name: Build docker images
+        run: docker build --tag $REGISTRY_PATH/nginx:${{ steps.vars.outputs.SHA7 }} .
+
+      - name: Log into registry
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
+
+      - name: Push images
+        run: docker push $REGISTRY_PATH/nginx:${{ steps.vars.outputs.SHA7 }}
+
+  push:
+    needs: build
+
+    runs-on: ubuntu-18.04
+
+    env:
+      REGISTRY_PATH: docker.pkg.github.com/${{ github.repository }}
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Get SHA7
+        id: vars
+        run: echo "::set-output name=SHA7::$(git rev-parse --short HEAD)"
+
+      - name: Log into registry
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
+
+      - name: Pull docker images
+        run: docker pull $REGISTRY_PATH/nginx:${{ steps.vars.outputs.SHA7 }}
+
+      - name: Tag images
+        run: docker tag $REGISTRY_PATH/nginx:${{ steps.vars.outputs.SHA7 }} $REGISTRY_PATH/nginx:latest
+
+      - name: Push images
+        run: docker push $REGISTRY_PATH/nginx:latest
