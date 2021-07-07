@@ -48,23 +48,106 @@
             <section id="about" class="content">
                 <a id="about-anchor" class="anchor"></a>
                 <h1>Darryl Forbes</h1>
-                <div>
-                    <h2>Hi, I'm Darryl</h2>
-                    <p>I'm a sophomore Computer Science major at Northwestern University. I love technology, especially the challenges and excitement that come with learning about and building new things.</p>
-                    <br>
-                    <h2>Programming Languages</h2>
-                    <p>Python, C#, C++, C, HTML, CSS, JavaScript, Bash, MATLAB</p>
-                    <br>
-                    <h2>Technical Skills</h2>
-                    <p>Git/GitHub, Unix, Windows, macOS, Vim, Visual Studio, VirtualBox, Microsoft Office, Hardware Installation/Troubleshooting</p>
-                    <br>
-                    <h2>Soft Skills</h2>
-                    <p>Solving problems independently, Communicating effectively, Managing responsibilities</p>
-                    <br>
-                    <h2>Interests & Activities</h2>
-                    <p>Besides coding, I enjoy playing trumpet in the Northwestern University Marching Band, video games like League of Legends, and sports like tennis and volleyball.</p>
+                <div id="about-intro">
+                  <p>TODO intro</p>
                 </div>
                 <img src="images/headshot.jpg">
+                <div id="about-columns">
+                  <div id="devops-column" class="about-column">
+                    <h2>DevOps Skills</h2>
+                    <ul>
+                      <li>Docker</li>
+                      <li>Kubernetes</li>
+                      <li>Amazon Web Services</li>
+                      <ul>
+                        <li>EC2</li>
+                        <li>RDS</li>
+                        <li>S3</li>
+                      </ul>
+                      <li>CI/CD Pipelines</li>
+                      <ul>
+                        <li>GitHub Actions</li>
+                      </ul>
+                      <li>Automation</li>
+                      <ul>
+                        <li>Python</li>
+                        <li>Bash</li>
+                      </ul>
+                      <li>Networking</li>
+                      <li>Nginx</li>
+                    </ul>
+                  </div>
+                  <div id="development-column" class="about-column">
+                    <h2>Development Skills</h2>
+                    <ul>
+                      <li>Frontend</li>
+                      <ul>
+                        <li>React</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                      </ul>
+                      <li>Backend</li>
+                      <ul>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>REST APIs</li>
+                        <li>JWT Authentication</li>
+                      </ul>
+                      <li>Databases</li>
+                      <ul>
+                        <li>PostgreSQL</li>
+                      </ul>
+                      <li>Git/GitHub</li>
+                      <li>Unit Testing</li>
+                      <ul>
+                        <li>Pytest</li>
+                      </ul>
+                    </ul>
+                  </div>
+                  <div id="other-column" class="about-column">
+                    <h2>Other Technical Skills</h2>
+                    <ul>
+                      <li>Operating Systems</li>
+                      <ul>
+                        <li>Linux</li>
+                        <li>Windows</li>
+                        <li>macOS</li>
+                      </ul>
+                      <li>Editors</li>
+                      <ul>
+                        <li>Vim</li>
+                        <li>Visual Studio</li>
+                      </ul>
+                      <li>VirtualBox</li>
+                      <li>Hardware Installation/Troubleshooting</li>
+                    </ul>
+                  </div>
+                  <div id="interests-column" class="about-column">
+                    <h2>Interests & Activities</h2>
+                    <ul>
+                      <li>Trumpet in Northwestern University Marching Band</li>
+                      <li>Spikeball</li>
+                      <li>Tennis</li>
+                      <li>PC Games</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- <div> -->
+                <!--     <h2>Hi, I'm Darryl</h2> -->
+                <!--     <p>I'm a junior Computer Science major at Northwestern University. I love technology, especially the challenges and excitement that come with learning about and building new things.</p> -->
+                <!--     <br> -->
+                <!--     <h2>DevOps Skills</h2> -->
+                <!--     <p>Docker, Kubernetes, Amazon Web Services (EC2, RDS, S3), CI/CD Pipelines (GitHub Actions), Automation (Python, Bash), Networking, Nginx</p> -->
+                <!--     <br> -->
+                <!--     <h2>Development Skills</h2> -->
+                <!--     <p>Frontend (React, HTML, CSS), Backend (Python, Django, REST APIs, JWT Authentication), Databases (PostgreSQL), Git/GitHub, Unit Testing (Pytest)</p> -->
+                <!--     <br> -->
+                <!--     <h2>Other Technical Skills</h2> -->
+                <!--     <p>Operating Systems (Linux, Windows, macOS), Editors (Vim, Visual Studio), VirtualBox, Hardware Installation/Troubleshooting</p> -->
+                <!--     <br> -->
+                <!--     <h2>Interests & Activities</h2> -->
+                <!--     <p>Besides coding, I enjoy playing trumpet in the Northwestern University Marching Band, video games like League of Legends, and sports like tennis and volleyball.</p> -->
+                <!-- </div> -->
             </section>
             <section id="projects" class="content">
                 <a id="projects-anchor" class="anchor"></a>
@@ -139,6 +222,54 @@
                 <a id="experience-anchor" class="anchor"></a>
                 <h1>Experience</h1>
                 <div id="timeline"></div>
+                <div id="job3" class="job">
+                    <div class="job-logo" onclick="window.open('https://www.nokia.com')">
+                        <img src="images/nokia-logo.png" class="job-img">
+                    </div>
+                    <div class="job-info">
+                        <h2>Nokia</h2>
+                        <br>
+                        <h2>Software Dev Cloud Intern</h2>
+                        <br>
+                        <p>June 2021 - August 2021</p>
+                        <ul>
+                            <br>
+                            <li>Provisioned Kubernetes infrastructure with Google Anthos on bare metal to run product code</li>
+                            <br>
+                            <li>Automated Kubernetes cluster construction and product deployment with Ansible</li>
+                            <br>
+                            <li>Documented installation and deployment instructions as well as troubleshooting information</li>
+                            <br>
+                            <li>Utilized automated testing to identify and resolve bugs in the infrastructure and deployment</li>
+                            <br>
+                            <li>Worked with developers to determine and provide necessary infrastructure</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="job2" class="job">
+                    <div class="job-logo" onclick="window.open('https://www.nokia.com')">
+                        <img src="images/nokia-logo.png" class="job-img">
+                    </div>
+                    <div class="job-info">
+                        <h2>Nokia</h2>
+                        <br>
+                        <h2>Software Dev Cloud Intern</h2>
+                        <br>
+                        <p>June 2020 - August 2020</p>
+                        <ul>
+                            <br>
+                            <li>Containerized existing simulation software using Docker</li>
+                            <br>
+                            <li>Automated and documented Kubernetes deployment strategies</li>
+                            <br>
+                            <li>Utilized automated testing to identify and resolve bugs in the image and infrastructure</li>
+                            <br>
+                            <li>Configured ZFS (file system) as an improved data storage solution for log collection servers</li>
+                            <br>
+                            <li>Improved automation of log collection, monitoring, and email notifications with Python scripts</li>
+                        </ul>
+                    </div>
+                </div>
                 <div id="job1" class="job">
                     <div class="job-logo" onclick="window.open('https://www.turtlewax.com')">
                         <img src="images/turtle-wax-logo.png" class="job-img">
@@ -146,9 +277,9 @@
                     <div class="job-info">
                         <h2>Turtle Wax, Inc.</h2>
                         <br>
-                        <p>June 2019 - August 2019</p>
-                        <br>
                         <h2>IT Technical Support Specialist</h2>
+                        <br>
+                        <p>June 2019 - August 2019</p>
                         <ul>
                             <br>
                             <li>Assisted in standardizing hardware deployment procedures</li>
@@ -166,9 +297,9 @@
                     <div class="job-info">
                         <h2>Turtle Wax, Inc.</h2>
                         <br>
-                        <p>June 2018 - August 2018</p>
-                        <br>
                         <h2>IT Technical Support Specialist</h2>
+                        <br>
+                        <p>June 2018 - August 2018</p>
                         <ul>
                             <br>
                             <li>Set up and deployed employee workstations and company conference rooms</li>
@@ -205,4 +336,3 @@
     </body>
 
 </html>
-
