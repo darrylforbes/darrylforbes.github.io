@@ -345,19 +345,19 @@ body > main {
   padding-left: 1.25rem;
 }
 
-#projects > #tetrow {
+#projects > #open-when {
   grid-column 1;
   grid-row: 2;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
 }
 
-#tetrow > img {
+#open-when > img {
   grid-column: 1;
   grid-row: 1;
 }
 
-#tetrow > #tetrow-text {
+#open-when > #open-when-text {
   grid-column: 2;
   grid-row:1;
   margin: auto;
@@ -597,17 +597,17 @@ body > main {
     grid-row-gap: 2rem;
   }
 
-  #projects > #tetrow {
+  #projects > #open-when {
     grid-template-columns: auto;
     grid-template-rows: auto auto;
   }
 
-  #tetrow > img {
+  #open-when > img {
     grid-column: 1;
     grid-row: 1;
   }
 
-  #tetrow > #tetrow-text {
+  #open-when > #open-when-text {
     grid-column: 1;
     grid-row: 2;
   }
